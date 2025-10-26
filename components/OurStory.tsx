@@ -46,7 +46,7 @@ export default function OurStory() {
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Building Excellence Since 2008</h3>
             <div className="space-y-4 text-gray-600">
               <p>
-                RV Logistics was founded with a simple yet powerful mission: to provide reliable, 
+                ARVI Logistics was founded with a simple yet powerful mission: to provide reliable, 
                 efficient, and innovative logistics solutions that help businesses thrive in an 
                 increasingly connected world.
               </p>

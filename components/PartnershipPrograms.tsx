@@ -22,7 +22,7 @@ export default function PartnershipPrograms() {
     {
       icon: TrendingUp,
       title: 'Franchise Opportunities',
-      description: 'Own and operate your own RV Logistics franchise in your local market.',
+      description: 'Own and operate your own ARVI Logistics franchise in your local market.',
       benefits: [
         'Proven business model',
         'Comprehensive training and support',
@@ -39,7 +39,7 @@ export default function PartnershipPrograms() {
     {
       icon: Globe,
       title: 'International Agents',
-      description: 'Represent RV Logistics in international markets and expand our global presence.',
+      description: 'Represent ARVI Logistics in international markets and expand our global presence.',
       benefits: [
         'Exclusive territory rights',
         'Commission-based compensation',

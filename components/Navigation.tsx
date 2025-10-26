@@ -40,7 +40,7 @@ export default function Navigation() {
                 <div className={`absolute -inset-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity -z-10 ${scrolled ? 'bg-primary-100' : 'bg-white/20'}`}></div>
               </div>
               <span className={`text-2xl font-bold transition-colors ${scrolled ? 'bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent' : 'text-white'}`}>
-                RV Logistics
+                ARVI Logistics
               </span>
             </Link>
           </div>

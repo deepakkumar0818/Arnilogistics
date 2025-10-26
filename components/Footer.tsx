@@ -20,7 +20,7 @@ export default function Footer() {
                 <div className="absolute -inset-1 bg-primary-500/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity -z-10"></div>
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                RV Logistics
+                ARVI Logistics
               </span>
             </Link>
             <p className="text-gray-300 mb-8 leading-relaxed text-lg">
@@ -168,7 +168,7 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-16 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-lg mb-4 md:mb-0">
-              © {currentYear} RV Logistics. All rights reserved.
+              © {currentYear} ARVI Logistics. All rights reserved.
             </p>
             <div className="flex space-x-8">
               <Link href="#" className="text-gray-400 hover:text-primary-400 text-lg transition-colors">

@@ -19,7 +19,7 @@ export default function GalleryHero() {
             Our Gallery
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
-            Explore our state-of-the-art facilities, cutting-edge operations, and the dynamic world of logistics excellence at RV Logistics
+            Explore our state-of-the-art facilities, cutting-edge operations, and the dynamic world of logistics excellence at ARVI Logistics
           </p>
         </div>
 

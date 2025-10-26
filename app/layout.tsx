@@ -7,7 +7,7 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'RV Logistics - Your Trusted Logistics Partner',
+  title: 'ARVI Logistics - Your Trusted Logistics Partner',
   description: 'Professional logistics services with modern solutions for all your transportation and supply chain needs.',
 }
 

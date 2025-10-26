@@ -8,7 +8,7 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: 'What services does RV Logistics provide?',
+      question: 'What services does ARVI Logistics provide?',
       answer: 'We provide comprehensive logistics services including road transportation, ocean freight, air cargo, warehousing & distribution, supply chain management, and risk management. Our services are designed to meet all your transportation and supply chain needs.'
     },
     {
@@ -36,7 +36,7 @@ export default function FAQ() {
       answer: 'Yes, we handle international shipments to over 150 countries worldwide. Our global network includes offices and partners in major cities around the world, ensuring seamless international logistics solutions with local expertise.'
     },
     {
-      question: 'What makes RV Logistics different from other logistics companies?',
+      question: 'What makes ARVI Logistics different from other logistics companies?',
       answer: 'Our combination of advanced technology, experienced team, global network, and customer-centric approach sets us apart. We focus on providing personalized solutions, real-time visibility, and exceptional customer service while maintaining competitive pricing.'
     },
     {

@@ -8,7 +8,7 @@ export default function CTA() {
           Ready to Transform Your Logistics?
         </h2>
         <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
-          Join thousands of satisfied customers who trust RV Logistics for their transportation and supply chain needs. 
+          Join thousands of satisfied customers who trust ARVI Logistics for their transportation and supply chain needs. 
           Get started today and experience the difference.
         </p>
         

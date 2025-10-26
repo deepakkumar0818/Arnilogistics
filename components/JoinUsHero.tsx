@@ -1,4 +1,4 @@
-import { Users, Handshake, TrendingUp } from 'lucide-react'
+import { Users, Network, TrendingUp } from 'lucide-react'
 
 export default function JoinUsHero() {
   return (
@@ -28,7 +28,7 @@ export default function JoinUsHero() {
           </div>
 
           <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 text-center">
-            <Handshake className="h-16 w-16 mx-auto mb-6 text-yellow-400" />
+            <Network className="h-16 w-16 mx-auto mb-6 text-yellow-400" />
             <h3 className="text-2xl font-bold mb-4">Partnerships</h3>
             <p className="text-gray-200 mb-6">
               Partner with us to expand your business and reach new markets.

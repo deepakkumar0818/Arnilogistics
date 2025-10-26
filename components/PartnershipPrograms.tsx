@@ -1,9 +1,9 @@
-import { Handshake, TrendingUp, Globe, Shield, Users, Award } from 'lucide-react'
+import { Network, TrendingUp, Globe, Shield, Users, Award } from 'lucide-react'
 
 export default function PartnershipPrograms() {
   const programs = [
     {
-      icon: Handshake,
+      icon: Network,
       title: 'Strategic Partnerships',
       description: 'Long-term partnerships with complementary businesses to expand our service offerings.',
       benefits: [

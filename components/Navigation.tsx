@@ -21,6 +21,7 @@ export default function Navigation() {
     { name: 'Who We Are', href: '/who-we-are' },
     { name: 'What We Do', href: '/what-we-do' },
     { name: 'Join Us', href: '/join-us' },
+    { name: 'Gallery', href: '/gallery' },
     { name: 'Contact', href: '/contact' },
   ]
 
@@ -70,14 +71,14 @@ export default function Navigation() {
           {/* CTA Button */}
           <div className="hidden lg:flex items-center">
             <Link
-              href="/contact"
+              href="/gallery"
               className={`px-6 py-2.5 rounded-full font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 ${
                 scrolled 
                   ? 'bg-gradient-to-r from-primary-600 to-primary-700 text-white hover:from-primary-700 hover:to-primary-800'
                   : 'bg-white text-primary-600 hover:bg-gray-50'
               }`}
             >
-              Get Quote
+              Gallery
             </Link>
           </div>
 
@@ -119,11 +120,11 @@ export default function Navigation() {
             ))}
             <div className="pt-4 border-t border-gray-100">
               <Link
-                href="/contact"
+                href="/gallery"
                 className="block w-full text-center bg-gradient-to-r from-primary-600 to-primary-700 text-white px-6 py-3 rounded-lg font-semibold hover:from-primary-700 hover:to-primary-800 transition-all duration-200"
                 onClick={() => setIsOpen(false)}
               >
-                Get Quote
+                Gallery
               </Link>
             </div>
           </div>

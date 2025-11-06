@@ -45,13 +45,13 @@ export default function BenefitsAndCulture() {
   ]
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gradient-to-b from-primary-800 to-primary-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Benefits & Culture
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             We believe in taking care of our team members and creating an environment where everyone can thrive, 
             grow, and contribute to our shared success.
           </p>
@@ -60,19 +60,19 @@ export default function BenefitsAndCulture() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {benefits.map((benefit, index) => (
             <div key={index} className="text-center group">
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-colors">
-                <benefit.icon className="h-8 w-8 text-primary-600" />
+              <div className="bg-accent-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-500/30 transition-colors border border-accent-400/30">
+                <benefit.icon className="h-8 w-8 text-accent-400" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">{benefit.title}</h3>
-              <p className="text-gray-600 text-sm">{benefit.description}</p>
+              <h3 className="text-lg font-semibold text-white mb-3">{benefit.title}</h3>
+              <p className="text-gray-300 text-sm">{benefit.description}</p>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-primary-600 to-primary-800 rounded-lg p-8 text-white">
+        <div className="mt-16 bg-white/10 backdrop-blur-sm rounded-lg p-8 text-white border border-white/10">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold mb-4">Our Values in Action</h3>
-            <p className="text-gray-200 text-lg max-w-3xl mx-auto">
+            <p className="text-gray-300 text-lg max-w-3xl mx-auto">
               Our company culture is built on respect, integrity, innovation, and collaboration. 
               We celebrate diversity, encourage creativity, and support each other's growth.
             </p>
@@ -80,29 +80,29 @@ export default function BenefitsAndCulture() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-yellow-400 text-primary-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-accent-500 text-primary-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8" />
               </div>
               <h4 className="text-lg font-semibold mb-2">Inclusive Environment</h4>
-              <p className="text-gray-200 text-sm">
+              <p className="text-gray-300 text-sm">
                 We foster an inclusive workplace where everyone feels valued and respected.
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-yellow-400 text-primary-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-accent-500 text-primary-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Trophy className="h-8 w-8" />
               </div>
               <h4 className="text-lg font-semibold mb-2">Excellence</h4>
-              <p className="text-gray-200 text-sm">
+              <p className="text-gray-300 text-sm">
                 We strive for excellence in everything we do and continuously improve our processes.
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-yellow-400 text-primary-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-accent-500 text-primary-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Heart className="h-8 w-8" />
               </div>
               <h4 className="text-lg font-semibold mb-2">Community Impact</h4>
-              <p className="text-gray-200 text-sm">
+              <p className="text-gray-300 text-sm">
                 We're committed to making a positive impact in the communities we serve.
               </p>
             </div>

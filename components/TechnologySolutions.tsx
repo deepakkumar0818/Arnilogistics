@@ -41,13 +41,13 @@ export default function TechnologySolutions() {
   ]
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gradient-to-b from-primary-900 via-primary-800 to-primary-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Technology Solutions
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Leveraging cutting-edge technology to provide intelligent, efficient, 
             and transparent logistics solutions for the modern world.
           </p>
@@ -55,16 +55,16 @@ export default function TechnologySolutions() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {technologies.map((tech, index) => (
-            <div key={index} className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow">
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <tech.icon className="h-8 w-8 text-primary-600" />
+            <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-8 hover:shadow-lg transition-shadow border border-white/10">
+              <div className="bg-accent-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6 border border-accent-400/30">
+                <tech.icon className="h-8 w-8 text-accent-400" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">{tech.title}</h3>
-              <p className="text-gray-600 mb-4">{tech.description}</p>
+              <h3 className="text-xl font-semibold text-white mb-3">{tech.title}</h3>
+              <p className="text-gray-300 mb-4">{tech.description}</p>
               <ul className="space-y-2">
                 {tech.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-sm text-gray-500">
-                    <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
+                  <li key={featureIndex} className="flex items-center text-sm text-gray-300">
+                    <div className="w-2 h-2 bg-accent-400 rounded-full mr-3"></div>
                     {feature}
                   </li>
                 ))}
@@ -73,24 +73,24 @@ export default function TechnologySolutions() {
           ))}
         </div>
 
-        <div className="bg-gradient-to-r from-primary-600 to-primary-800 rounded-lg p-8 text-white text-center">
+        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 text-white text-center border border-white/10">
           <h3 className="text-2xl font-bold mb-4">Digital Transformation</h3>
-          <p className="text-gray-200 text-lg mb-6 max-w-3xl mx-auto">
+          <p className="text-gray-300 text-lg mb-6 max-w-3xl mx-auto">
             Our technology platform integrates seamlessly with your existing systems, 
             providing real-time visibility and control over your entire supply chain.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <div className="text-3xl font-bold text-yellow-400 mb-2">99.9%</div>
-              <div className="text-gray-200">System Uptime</div>
+              <div className="text-3xl font-bold text-accent-400 mb-2">99.9%</div>
+              <div className="text-gray-300">System Uptime</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-yellow-400 mb-2">24/7</div>
-              <div className="text-gray-200">Support Available</div>
+              <div className="text-3xl font-bold text-accent-400 mb-2">24/7</div>
+              <div className="text-gray-300">Support Available</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-yellow-400 mb-2">100%</div>
-              <div className="text-gray-200">Data Security</div>
+              <div className="text-3xl font-bold text-accent-400 mb-2">100%</div>
+              <div className="text-gray-300">Data Security</div>
             </div>
           </div>
         </div>

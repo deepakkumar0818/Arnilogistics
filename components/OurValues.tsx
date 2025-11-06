@@ -41,13 +41,13 @@ export default function OurValues() {
   ]
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gradient-to-b from-primary-900 via-primary-800 to-primary-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Our Values
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             These core values guide every decision we make and every service we provide. 
             They are the foundation of our company culture and our commitment to excellence.
           </p>
@@ -55,12 +55,12 @@ export default function OurValues() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {values.map((value, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className={`${value.color} w-16 h-16 rounded-full flex items-center justify-center mb-6`}>
-                <value.icon className="h-8 w-8" />
+            <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow border border-white/10">
+              <div className="bg-accent-500/20 w-16 h-16 rounded-full flex items-center justify-center mb-6 border border-accent-400/30">
+                <value.icon className="h-8 w-8 text-accent-400" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">{value.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{value.description}</p>
+              <h3 className="text-xl font-semibold text-white mb-4">{value.title}</h3>
+              <p className="text-gray-300 leading-relaxed">{value.description}</p>
             </div>
           ))}
         </div>

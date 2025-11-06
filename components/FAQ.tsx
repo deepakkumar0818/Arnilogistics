@@ -9,7 +9,7 @@ export default function FAQ() {
   const faqs = [
     {
       question: 'What services does ARVI Logistics provide?',
-      answer: 'We provide comprehensive logistics services including road transportation, ocean freight, air cargo, warehousing & distribution, supply chain management, and risk management. Our services are designed to meet all your transportation and supply chain needs.'
+      answer: 'We provide comprehensive logistics services including road transportation, warehousing & distribution, and supply chain management. Our services are designed to meet all your transportation and supply chain needs.'
     },
     {
       question: 'How can I track my shipment?',
@@ -17,7 +17,7 @@ export default function FAQ() {
     },
     {
       question: 'What are your delivery timeframes?',
-      answer: 'Delivery timeframes vary depending on the service and destination. For road transportation, we offer same-day and next-day delivery options. Ocean freight typically takes 7-21 days, while air cargo can be delivered within 1-5 days depending on the destination.'
+      answer: 'Delivery timeframes vary depending on the service and destination. For road transportation, we offer same-day and next-day delivery options. Contact us for specific delivery timelines based on your needs.'
     },
     {
       question: 'Do you provide insurance for shipments?',
@@ -54,13 +54,13 @@ export default function FAQ() {
   }
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gradient-to-b from-primary-800 to-primary-900">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Find answers to common questions about our logistics services. 
             If you don't see your question here, please contact us directly.
           </p>
@@ -68,22 +68,22 @@ export default function FAQ() {
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden border border-white/10">
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
+                className="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-white/10 transition-colors"
               >
-                <h3 className="text-lg font-semibold text-gray-900 pr-4">{faq.question}</h3>
+                <h3 className="text-lg font-semibold text-white pr-4">{faq.question}</h3>
                 {openIndex === index ? (
-                  <ChevronUp className="h-6 w-6 text-primary-600 flex-shrink-0" />
+                  <ChevronUp className="h-6 w-6 text-accent-400 flex-shrink-0" />
                 ) : (
-                  <ChevronDown className="h-6 w-6 text-primary-600 flex-shrink-0" />
+                  <ChevronDown className="h-6 w-6 text-accent-400 flex-shrink-0" />
                 )}
               </button>
               
               {openIndex === index && (
                 <div className="px-8 pb-6">
-                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                  <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
                 </div>
               )}
             </div>
@@ -91,17 +91,17 @@ export default function FAQ() {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="bg-primary-900 text-white rounded-lg p-8">
+          <div className="bg-white/10 backdrop-blur-sm text-white rounded-lg p-8 border border-white/10">
             <h3 className="text-2xl font-bold mb-4">Still Have Questions?</h3>
-            <p className="text-gray-200 text-lg mb-6">
+            <p className="text-gray-300 text-lg mb-6">
               Our customer service team is here to help. Contact us directly for personalized assistance 
               with your logistics needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-yellow-400 text-primary-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition-colors">
+              <button className="bg-accent-500 text-primary-900 px-8 py-4 rounded-lg font-semibold hover:bg-accent-600 transition-colors">
                 Contact Customer Service
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary-900 transition-colors">
+              <button className="border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors">
                 Schedule a Consultation
               </button>
             </div>

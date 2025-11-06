@@ -41,13 +41,13 @@ export default function IndustriesServed() {
   ]
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gradient-to-b from-primary-800 to-primary-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Industries We Serve
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Our expertise spans across diverse industries, providing specialized logistics 
             solutions tailored to meet the unique requirements of each sector.
           </p>
@@ -55,18 +55,18 @@ export default function IndustriesServed() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {industries.map((industry, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow border border-white/10">
               <div className="flex items-center mb-6">
-                <div className="bg-primary-100 p-3 rounded-lg mr-4">
-                  <industry.icon className="h-8 w-8 text-primary-600" />
+                <div className="bg-accent-500/20 p-3 rounded-lg mr-4 border border-accent-400/30">
+                  <industry.icon className="h-8 w-8 text-accent-400" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900">{industry.title}</h3>
+                <h3 className="text-xl font-semibold text-white">{industry.title}</h3>
               </div>
-              <p className="text-gray-600 mb-6">{industry.description}</p>
+              <p className="text-gray-300 mb-6">{industry.description}</p>
               <ul className="space-y-2">
                 {industry.services.map((service, serviceIndex) => (
-                  <li key={serviceIndex} className="flex items-center text-sm text-gray-500">
-                    <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
+                  <li key={serviceIndex} className="flex items-center text-sm text-gray-300">
+                    <div className="w-2 h-2 bg-accent-400 rounded-full mr-3"></div>
                     {service}
                   </li>
                 ))}
@@ -76,13 +76,13 @@ export default function IndustriesServed() {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Don't See Your Industry?</h3>
-            <p className="text-gray-600 text-lg mb-6">
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg shadow-lg p-8 max-w-4xl mx-auto border border-white/10">
+            <h3 className="text-2xl font-bold text-white mb-4">Don't See Your Industry?</h3>
+            <p className="text-gray-300 text-lg mb-6">
               We work with clients across all industries and can develop customized solutions 
               to meet your specific logistics requirements, no matter how unique.
             </p>
-            <button className="bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+            <button className="bg-accent-500 text-primary-900 px-8 py-4 rounded-lg font-semibold hover:bg-accent-600 transition-colors">
               Discuss Your Needs
             </button>
           </div>

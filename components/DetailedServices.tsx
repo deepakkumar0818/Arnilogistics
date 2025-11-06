@@ -1,4 +1,4 @@
-import { Truck, Ship, Plane, Package, MapPin, Shield, Clock, Users } from 'lucide-react'
+import { Truck, Package, MapPin, Clock, Users } from 'lucide-react'
 
 export default function DetailedServices() {
   const services = [
@@ -19,44 +19,6 @@ export default function DetailedServices() {
         'Real-time tracking',
         'Flexible scheduling',
         'Nationwide coverage'
-      ]
-    },
-    {
-      icon: Ship,
-      title: 'Ocean Freight',
-      description: 'Global shipping solutions for international trade and commerce.',
-      features: [
-        'FCL (Full Container Load) services',
-        'LCL (Less than Container Load) services',
-        'Port-to-port delivery',
-        'Door-to-door shipping',
-        'Customs clearance assistance',
-        'Cargo insurance options'
-      ],
-      benefits: [
-        'Global network coverage',
-        'Competitive rates',
-        'Reliable schedules',
-        'Expert documentation'
-      ]
-    },
-    {
-      icon: Plane,
-      title: 'Air Cargo',
-      description: 'Fast and secure air freight services for time-sensitive shipments.',
-      features: [
-        'Express air freight',
-        'Charter flight services',
-        'Priority cargo handling',
-        'Temperature-sensitive shipping',
-        'Dangerous goods transport',
-        'Same-day airport pickup'
-      ],
-      benefits: [
-        'Fastest delivery times',
-        'Global airport network',
-        'Secure handling',
-        'Priority processing'
       ]
     },
     {
@@ -96,36 +58,17 @@ export default function DetailedServices() {
         'Better visibility',
         'Risk mitigation'
       ]
-    },
-    {
-      icon: Shield,
-      title: 'Risk Management & Insurance',
-      description: 'Comprehensive insurance and security solutions.',
-      features: [
-        'Cargo insurance coverage',
-        'Security protocols',
-        'Compliance monitoring',
-        'Risk assessment',
-        'Claims management',
-        'Safety training programs'
-      ],
-      benefits: [
-        'Asset protection',
-        'Regulatory compliance',
-        'Peace of mind',
-        'Expert support'
-      ]
     }
   ]
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gradient-to-b from-primary-900 via-primary-800 to-primary-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Our Services
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             From transportation to warehousing, we provide comprehensive logistics solutions 
             that keep your business moving forward efficiently and cost-effectively.
           </p>
@@ -136,31 +79,31 @@ export default function DetailedServices() {
             <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
               <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                 <div className="flex items-center mb-6">
-                  <div className="bg-primary-100 p-4 rounded-lg mr-4">
-                    <service.icon className="h-8 w-8 text-primary-600" />
+                  <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg mr-4 border border-white/10">
+                    <service.icon className="h-8 w-8 text-accent-400" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">{service.title}</h3>
+                  <h3 className="text-2xl font-bold text-white">{service.title}</h3>
                 </div>
-                <p className="text-gray-600 text-lg mb-8">{service.description}</p>
+                <p className="text-gray-300 text-lg mb-8">{service.description}</p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-4">What We Offer:</h4>
+                    <h4 className="font-semibold text-white mb-4">What We Offer:</h4>
                     <ul className="space-y-2">
                       {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center text-gray-600">
-                          <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
+                        <li key={featureIndex} className="flex items-center text-gray-300">
+                          <div className="w-2 h-2 bg-accent-400 rounded-full mr-3"></div>
                           {feature}
                         </li>
                       ))}
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-4">Key Benefits:</h4>
+                    <h4 className="font-semibold text-white mb-4">Key Benefits:</h4>
                     <ul className="space-y-2">
                       {service.benefits.map((benefit, benefitIndex) => (
-                        <li key={benefitIndex} className="flex items-center text-gray-600">
-                          <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                        <li key={benefitIndex} className="flex items-center text-gray-300">
+                          <div className="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
                           {benefit}
                         </li>
                       ))}
@@ -170,10 +113,10 @@ export default function DetailedServices() {
               </div>
               
               <div className={index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}>
-                <div className="bg-gradient-to-br from-primary-100 to-primary-200 rounded-lg p-8 h-80 flex items-center justify-center">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 h-80 flex items-center justify-center border border-white/10">
                   <div className="text-center">
-                    <service.icon className="h-24 w-24 text-primary-600 mx-auto mb-4" />
-                    <p className="text-primary-700 font-medium">Visual representation of {service.title.toLowerCase()}</p>
+                    <service.icon className="h-24 w-24 text-accent-400 mx-auto mb-4" />
+                    <p className="text-gray-300 font-medium">Visual representation of {service.title.toLowerCase()}</p>
                   </div>
                 </div>
               </div>

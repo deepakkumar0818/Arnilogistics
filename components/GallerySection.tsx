@@ -7,83 +7,47 @@ import { X, ChevronLeft, ChevronRight } from 'lucide-react'
 export default function GallerySection() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
 
-  // Sample images - You can replace these with your actual images
+  // Gallery images from Galley folder
   const galleryImages = [
     {
       id: 1,
-      url: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800',
-      title: 'Warehouse Operations',
+      url: '/Galley/117178984_4578175885533856_5741741798414968638_n.jpg',
+      title: 'ARVI Logistics Operations',
       category: 'Operations'
     },
     {
       id: 2,
-      url: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800',
-      title: 'Logistics Hub',
-      category: 'Infrastructure'
+      url: '/Galley/119473957_4773709732647136_4600854575672152963_n.jpg',
+      title: 'Transportation Services',
+      category: 'Operations'
     },
     {
       id: 3,
-      url: 'https://images.unsplash.com/photo-1621947081727-77d53b1b7ea7?w=800',
-      title: 'Cargo Delivery',
-      category: 'Delivery'
+      url: '/Galley/119482905_4773698565981586_4030977466744911590_n (1).jpg',
+      title: 'Fleet Management',
+      category: 'Fleet'
     },
     {
       id: 4,
-      url: 'https://images.unsplash.com/photo-1572883454114-1cf0031ede2a?w=800',
-      title: 'Shipping Container',
+      url: '/Galley/471172852_1129863075243760_3662000209154986691_n.jpg',
+      title: 'Warehouse Operations',
       category: 'Operations'
     },
     {
       id: 5,
-      url: 'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800',
-      title: 'Transportation Fleet',
-      category: 'Fleet'
-    },
-    {
-      id: 6,
-      url: 'https://images.unsplash.com/photo-1564485377539-4af72d1f6a2f?w=800',
-      title: 'Global Shipping',
-      category: 'International'
-    },
-    {
-      id: 7,
-      url: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
-      title: 'Modern Warehouse',
+      url: '/Galley/471258898_1129868311909903_4196427507684202051_n.jpg',
+      title: 'Logistics Hub',
       category: 'Infrastructure'
     },
     {
-      id: 8,
-      url: 'https://images.unsplash.com/photo-1561912774-79769a0a0a7f?w=800',
-      title: 'Truck Loading',
-      category: 'Operations'
-    },
-    {
-      id: 9,
-      url: 'https://images.unsplash.com/photo-1586528116172-29726b3c8f03?w=800',
-      title: 'Distribution Center',
-      category: 'Operations'
-    },
-    {
-      id: 10,
-      url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800',
-      title: 'Port Operations',
-      category: 'International'
-    },
-    {
-      id: 11,
-      url: 'https://images.unsplash.com/photo-1567168544813-cc03465b4fa8?w=800',
-      title: 'Cargo Handling',
-      category: 'Operations'
-    },
-    {
-      id: 12,
-      url: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
-      title: 'Supply Chain',
-      category: 'Operations'
+      id: 6,
+      url: '/Galley/471529000_1129862991910435_2711511266717249596_n.jpg',
+      title: 'Delivery Services',
+      category: 'Delivery'
     },
   ]
 
-  const categories = ['All', 'Operations', 'Infrastructure', 'Delivery', 'Fleet', 'International']
+  const categories = ['All', 'Operations', 'Infrastructure', 'Delivery', 'Fleet']
 
   const [activeCategory, setActiveCategory] = useState('All')
   
@@ -112,7 +76,7 @@ export default function GallerySection() {
 
   return (
     <>
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gradient-to-b from-primary-800 to-primary-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Category Filter */}
           <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -122,8 +86,8 @@ export default function GallerySection() {
                 onClick={() => setActiveCategory(category)}
                 className={`px-6 py-2 rounded-full font-semibold transition-all duration-200 ${
                   activeCategory === category
-                    ? 'bg-primary-600 text-white shadow-lg'
-                    : 'bg-white text-gray-700 hover:bg-primary-50 hover:text-primary-600'
+                    ? 'bg-accent-500 text-primary-900 shadow-lg'
+                    : 'bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white border border-white/10'
                 }`}
               >
                 {category}
@@ -205,11 +169,11 @@ export default function GallerySection() {
               />
             </div>
             
-            <div className="bg-white rounded-lg p-6 mt-4" onClick={(e) => e.stopPropagation()}>
-              <h3 className="text-2xl font-bold text-gray-900">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 mt-4 border border-white/10" onClick={(e) => e.stopPropagation()}>
+              <h3 className="text-2xl font-bold text-white">
                 {galleryImages.find(img => img.id === selectedImage)?.title}
               </h3>
-              <p className="text-gray-600 mt-2">
+              <p className="text-gray-300 mt-2">
                 {galleryImages.find(img => img.id === selectedImage)?.category}
               </p>
             </div>

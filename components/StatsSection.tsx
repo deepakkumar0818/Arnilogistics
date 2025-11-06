@@ -44,10 +44,10 @@ export default function StatsSection() {
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
               <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all">
-                <div className="bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="bg-accent-400 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                   <stat.icon className="h-8 w-8 text-primary-900" />
                 </div>
-                <div className="text-4xl md:text-5xl font-bold text-yellow-400 mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-accent-400 mb-2">
                   {stat.number}
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{stat.label}</h3>

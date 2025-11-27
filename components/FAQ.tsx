@@ -54,10 +54,16 @@ export default function FAQ() {
   }
 
   return (
-    <section className="py-20 bg-gradient-to-b from-primary-800 to-primary-900">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+    <section className="py-20 bg-gradient-to-b from-primary-800 to-primary-900 relative overflow-hidden">
+      {/* Animated background */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-accent-500/5 rounded-full blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-white/5 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '3s' }}></div>
+      </div>
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-16 animate-fade-in-up">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 transform transition-all duration-300 hover:scale-105">
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -68,44 +74,32 @@ export default function FAQ() {
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden border border-white/10">
+            <div 
+              key={index} 
+              className="group bg-white/10 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden border border-white/10 hover:border-accent-400/30 transition-all duration-300 transform hover:scale-[1.02] animate-fade-in-up"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-white/10 transition-colors"
+                className="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-white/15 transition-all duration-300"
               >
-                <h3 className="text-lg font-semibold text-white pr-4">{faq.question}</h3>
-                {openIndex === index ? (
-                  <ChevronUp className="h-6 w-6 text-accent-400 flex-shrink-0" />
-                ) : (
-                  <ChevronDown className="h-6 w-6 text-accent-400 flex-shrink-0" />
-                )}
+                <h3 className="text-lg font-semibold text-white pr-4 transform transition-all duration-300 group-hover:text-accent-300">{faq.question}</h3>
+                <div className="flex-shrink-0 transform transition-all duration-300">
+                  {openIndex === index ? (
+                    <ChevronUp className="h-6 w-6 text-accent-400 transform rotate-180 transition-transform duration-300" />
+                  ) : (
+                    <ChevronDown className="h-6 w-6 text-accent-400 transform transition-transform duration-300 group-hover:scale-110" />
+                  )}
+                </div>
               </button>
               
               {openIndex === index && (
-                <div className="px-8 pb-6">
+                <div className="px-8 pb-6 animate-fade-in-up">
                   <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
                 </div>
               )}
             </div>
           ))}
-        </div>
-
-        <div className="mt-16 text-center">
-          <div className="bg-white/10 backdrop-blur-sm text-white rounded-lg p-8 border border-white/10">
-            <h3 className="text-2xl font-bold mb-4">Still Have Questions?</h3>
-            <p className="text-gray-300 text-lg mb-6">
-              Our customer service team is here to help. Contact us directly for personalized assistance 
-              with your logistics needs.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-accent-500 text-primary-900 px-8 py-4 rounded-lg font-semibold hover:bg-accent-600 transition-colors">
-                Contact Customer Service
-              </button>
-              <button className="border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors">
-                Schedule a Consultation
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </section>

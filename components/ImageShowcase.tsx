@@ -75,7 +75,7 @@ export default function ImageShowcase() {
     }
   }, [])
 
-  const yearsCount = useCountUp(15, 2000, '+', 0, isVisible)
+  const yearsCount = useCountUp(20, 2000, '+', 0, isVisible)
   const clientsCount = useCountUp(10, 2000, 'K+', 0, isVisible)
   const successCount = useCountUp(99.8, 2000, '%', 1, isVisible)
 
@@ -131,7 +131,7 @@ export default function ImageShowcase() {
             </h2>
             
             <p className="text-xl text-gray-300 leading-relaxed">
-              With over 15 years of experience, ARVI Logistics has built a reputation for 
+              With over 20 years of experience, ARVI Logistics has built a reputation for 
               delivering exceptional transportation and supply chain solutions. Our commitment 
               to quality, reliability, and innovation drives everything we do.
             </p>

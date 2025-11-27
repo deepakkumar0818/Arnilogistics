@@ -96,9 +96,14 @@ export default function ServicesOverview() {
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
                 Get a customized quote and discover how our solutions can optimize your supply chain.
               </p>
-              <button className="bg-accent-500 text-primary-900 px-8 py-4 rounded-2xl font-semibold hover:bg-accent-600 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <a 
+                href="https://rxo.com/get-a-quote/?service=Truckload" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block bg-accent-500 text-primary-900 px-8 py-4 rounded-2xl font-semibold hover:bg-accent-600 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
                 Get Your Free Quote
-              </button>
+              </a>
             </div>
           </div>
         </div>

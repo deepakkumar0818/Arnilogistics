@@ -69,43 +69,35 @@ export default function BenefitsAndCulture() {
           ))}
         </div>
 
-        <div className="mt-16 bg-white/10 backdrop-blur-sm rounded-lg p-8 text-white border border-white/10">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold mb-4">Our Values in Action</h3>
-            <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-              Our company culture is built on respect, integrity, innovation, and collaboration. 
-              We celebrate diversity, encourage creativity, and support each other's growth.
-            </p>
+        <div className="mt-16 bg-white/10 backdrop-blur-md rounded-2xl p-8 md:p-12 text-white border border-white/20 shadow-xl">
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-3xl md:text-4xl font-bold mb-8 text-center">A Team Built on Trust</h3>
+            <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
+              <p>
+                At ARVI Logistics, we keep things simple — we believe in treating people right and doing what we say we’ll do. We’ve built our business by hiring good people, backing them up, and giving them the space to succeed.
+              </p>
+              <p>
+                We don’t run things like a big corporate office. Everyone here knows each other, communicates directly, and works toward the same goal — taking care of our customers and carriers. When someone needs help, we step in. When someone does a great job, we notice.
+              </p>
+              <p>
+                That’s how we’ve operated since day one, and it’s how we plan to keep growing.
+              </p>
+            </div>
           </div>
+        </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="bg-accent-500 text-primary-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8" />
-              </div>
-              <h4 className="text-lg font-semibold mb-2">Inclusive Environment</h4>
-              <p className="text-gray-300 text-sm">
-                We foster an inclusive workplace where everyone feels valued and respected.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="bg-accent-500 text-primary-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Trophy className="h-8 w-8" />
-              </div>
-              <h4 className="text-lg font-semibold mb-2">Excellence</h4>
-              <p className="text-gray-300 text-sm">
-                We strive for excellence in everything we do and continuously improve our processes.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="bg-accent-500 text-primary-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Heart className="h-8 w-8" />
-              </div>
-              <h4 className="text-lg font-semibold mb-2">Community Impact</h4>
-              <p className="text-gray-300 text-sm">
-                We're committed to making a positive impact in the communities we serve.
-              </p>
-            </div>
+        <div className="mt-16 bg-gradient-to-br from-accent-500/10 to-primary-800/50 backdrop-blur-md rounded-2xl p-8 md:p-12 text-white border border-accent-400/30 shadow-xl">
+          <div className="max-w-3xl mx-auto text-center">
+            <h3 className="text-sm md:text-base tracking-[0.2em] uppercase text-gray-300 mb-4 animate-slogan">
+              Our Promise
+            </h3>
+            <p className="text-2xl md:text-3xl lg:text-4xl text-gray-100 leading-relaxed italic font-semibold">
+              “We stand behind every load, every partner, and every promise.”
+            </p>
+            <p className="text-sm md:text-base text-gray-300 mt-5 leading-relaxed italic">
+              At ARVI Logistics, our mission is simple: Move freight efficiently, build relationships
+              honestly, and grow together as a family.
+            </p>
           </div>
         </div>
       </div>

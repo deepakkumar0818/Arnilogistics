@@ -1,14 +1,26 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Navigation from '@/components/Navigation'
-import Footer from '@/components/Footer'
+import { generateMetadata as genMeta, siteConfig } from '@/lib/seo'
+import StructuredData from '@/components/StructuredData'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true,
+})
 
-export const metadata: Metadata = {
-  title: 'ARVI Logistics - Your Trusted Logistics Partner',
-  description: 'Professional logistics services with modern solutions for all your transportation and supply chain needs.',
+export const metadata: Metadata = genMeta({
+  title: siteConfig.title,
+  description: siteConfig.description,
+  path: '/',
+})
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#1e3a8a',
 }
 
 export default function RootLayout({
@@ -19,9 +31,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navigation />
-        <main>{children}</main>
-        <Footer />
+        <StructuredData type="Organization" />
+        <StructuredData type="WebSite" />
+        {children}
       </body>
     </html>
   )

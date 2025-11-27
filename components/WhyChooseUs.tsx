@@ -5,7 +5,7 @@ export default function WhyChooseUs() {
     {
       icon: Award,
       title: 'Industry Excellence',
-      description: 'Over 15 years of experience in logistics with a track record of delivering exceptional results for our clients.',
+      description: 'Over 20 years of experience in logistics with a track record of delivering exceptional results for our clients.',
       stat: '99.8%'
     },
     {

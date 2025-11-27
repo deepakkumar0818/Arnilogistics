@@ -13,14 +13,22 @@ export default function CTA() {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <button className="bg-accent-500 text-primary-900 px-8 py-4 rounded-lg font-semibold hover:bg-accent-600 transition-colors flex items-center justify-center">
+          <a 
+            href="https://rxo.com/get-a-quote/?service=Truckload" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-accent-500 text-primary-900 px-8 py-4 rounded-lg font-semibold hover:bg-accent-600 transition-colors flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+          >
             Get Free Quote
             <ArrowRight className="ml-2 h-5 w-5" />
-          </button>
-          <button className="border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors flex items-center justify-center">
+          </a>
+          <a 
+            href="tel:+18772950849"
+            className="border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors flex items-center justify-center"
+          >
             <Phone className="mr-2 h-5 w-5" />
             Call Us Now
-          </button>
+          </a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
@@ -35,7 +43,7 @@ export default function CTA() {
             <Mail className="h-6 w-6 text-accent-400" />
             <div>
               <div className="text-sm text-gray-300">Email us</div>
-              <div className="font-semibold">accounts@arvitransport.com</div>
+              <div className="font-semibold">customerservice@arvilogisticsinc.com</div>
             </div>
           </div>
         </div>
